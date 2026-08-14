@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App Redesign — UX/UI Case Study</title>
+    <meta name="description" content="A premium Behance-style UX/UI Case Study for a cooking and recipe application redesign.">
+    <!-- Google Fonts (Strictly 2 Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="styles.css?v=9">
+</head>
+<body>
+
+    <!-- Main Behance Page Wrapper -->
+    <div class="behance-project">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="hero-tag">UX/UI CASE STUDY</span>
+                <h1 class="hero-title">Redesigning a recipe app</h1>
+                <p class="hero-subtitle">Creating new revenue opportunities without compromising the cooking experience.</p>
+                
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">Role</span>
+                        <span class="meta-val">Lead UI/UX Designer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Timeline</span>
+                        <span class="meta-val">1 Week</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-mockup-wrapper">
+                <img src="assets/mockups/shared_image.png" alt="Recipe App Homescreen" class="hero-mockup">
+            </div>
+        </section>
+
+        <!-- Project Overview Section -->
+        <section class="case-section bg-light" id="overview">
+            <div class="case-container">
+                <div class="section-header">
+                    <span class="step-badge">01</span>
+                    <h2>Project Overview</h2>
+                </div>
+                
+                <div class="grid-2col">
+                    <div class="overview-left">
+                        <div class="block">
+                            <h3>The Client</h3>
+                            <p>An established recipe platform already has a loyal user base and a growing library of recipes covering local and international cuisines.</p>
+                        </div>
+                        
+                        <div class="block">
+                            <h3>The Client's Request</h3>
+                            <blockquote class="behance-quote">
+                                “I want to increase revenue from my existing platform, but I don't want monetization to come at the cost of my users' experience.”
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-right">
+                        <div class="block highlight-block">
+                            <h3>The Core Challenge</h3>
+                            <p>How might I create new business opportunities within the recipe experience without frustrating the users who already love the product?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roadmap -->
+                <!-- Interactive Map Doodle Roadmap -->
+                <div class="roadmap-block" id="roadmap">
+                    <h3>Project Roadmap</h3>
+                    
+                    <div class="map-doodle-container">
+                        <!-- Curved dashed connecting doodle path -->
+                        <svg class="doodle-line-svg" viewBox="0 0 1000 70" preserveAspectRatio="none">
+                            <path d="M 90 35 C 200 5, 250 65, 350 35 C 450 5, 500 65, 610 35 C 710 5, 760 65, 870 35" fill="none" stroke="#d17a5c" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round"/>
+                        </svg>
+
+                        <div class="map-doodle-grid">
+                            <!-- Node 01 -->
+                            <a href="#overview" class="doodle-card">
+                                <div class="doodle-head">
+                                    <span class="doodle-num">01</span>
+                                    <span class="doodle-arrow">→</span>
+                                </div>
+                                <h4 class="doodle-title">THE BRIEF</h4>
+                                <p class="doodle-desc">Understand the business challenge</p>
+                            </a>
+
+                            <!-- Node 02 -->
+                            <a href="#problems" class="doodle-card">
+                                <div class="doodle-head">
+                                    <span class="doodle-num">02</span>
+                                    <span class="doodle-arrow">→</span>
+                                </div>
+                                <h4 class="doodle-title">THE PROBLEM</h4>
+                                <p class="doodle-desc">Define the key UX & business problems</p>
+                            </a>
+
+                            <!-- Node 03 -->
+                            <a href="#findings" class="doodle-card">
+                                <div class="doodle-head">
+                                    <span class="doodle-num">03</span>
+                                    <span class="doodle-arrow">→</span>
+                                </div>
+                                <h4 class="doodle-title">WHAT I FOUND</h4>
+                                <p class="doodle-desc">Observe friction and uncover opportunities</p>
+                            </a>
+
+                            <!-- Node 04 -->
+                            <a href="#solutions" class="doodle-card">
+                                <div class="doodle-head">
+                                    <span class="doodle-num">04</span>
+                                    <span class="doodle-arrow">→</span>
+                                </div>
+                                <h4 class="doodle-title">THE SOLUTIONS</h4>
+                                <p class="doodle-desc">Design focused UX/UI solutions</p>
+                            </a>
+
+                            <!-- Node 05 -->
+                            <a href="#impact" class="doodle-card">
+                                <div class="doodle-head">
+                                    <span class="doodle-num">05</span>
+                                    <span class="doodle-flag">★</span>
+                                </div>
+                                <h4 class="doodle-title">THE VALUE</h4>
+                                <p class="doodle-desc">Show how the solutions benefit users and the business</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Statement Section -->
+        <section class="case-section" id="problems">
+            <div class="case-container">
+                <div class="section-header">
+                    <span class="step-badge">02</span>
+                    <h2>The Problem</h2>
+                    <p class="section-subtitle-text">Key pain points identified from my findings and user research.</p>
+                </div>
+                
+                <div class="problems-list">
+                    <div class="problem-row">
+                        <div class="problem-num-col">01</div>
+                        <div class="problem-text-col">
+                            <h3>Discovery ends too early</h3>
+                            <p>Users come to find a recipe, but often have little reason to continue exploring once they find what they need.</p>
+                        </div>
+                        <div class="problem-impact-col">
+                            <span class="impact-lbl">BUSINESS IMPACT</span>
+                            <p>Lower engagement and fewer opportunities to build a recurring habit.</p>
+                        </div>
+                    </div>
+
+                    <div class="problem-row">
+                        <div class="problem-num-col">02</div>
+                        <div class="problem-text-col">
+                            <h3>The recipe library isn't doing enough work</h3>
+                            <p>With recipes spanning local and international cuisines, users may struggle to discover recipes that actually match their preferences, mood, ingredients or time available.</p>
+                        </div>
+                        <div class="problem-impact-col">
+                            <span class="impact-lbl">BUSINESS IMPACT</span>
+                            <p>Valuable content remains undiscovered, limiting engagement opportunities.</p>
+                        </div>
+                    </div>
+
+                    <div class="problem-row">
+                        <div class="problem-num-col">03</div>
+                        <div class="problem-text-col">
+                            <h3>Monetization can become a UX problem</h3>
+                            <p>New revenue opportunities can easily feel forced when they interrupt the user's primary goal: finding and cooking a recipe.</p>
+                        </div>
+                        <div class="problem-impact-col">
+                            <span class="impact-lbl">BUSINESS IMPACT</span>
+                            <p>Loss of existing users if monetization is implemented poorly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Findings Section -->
+        <section class="case-section bg-light" id="findings">
+            <div class="case-container">
+                <div class="section-header">
+                    <span class="step-badge">03</span>
+                    <h2>What I Found</h2>
+                    <p class="section-subtitle-text">Observations & opportunity mapping across the user lifecycle.</p>
+                </div>
+                
+                <div class="findings-grid">
+                    <!-- Col 1 -->
+                    <div class="finding-card">
+                        <div class="finding-top">
+                            <span class="find-num">01</span>
+                            <h3>Discovery Flow</h3>
+                            <div class="finding-sub-header">From one recipe to continued discovery</div>
+                        </div>
+                        
+                        <div class="finding-body">
+                            <div class="body-item">
+                                <span class="body-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a6 6 0 0 1 6 6c0 2.22-1.21 4.16-3 5.2V17a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-3.8C7.21 12.16 6 10.22 6 8a6 6 0 0 1 6-6z"/><path d="M9 21h6"/></svg> OBSERVATION</span>
+                                <p>70% of sessions are single-recipe view sessions. Users achieve their immediate goal and exit, leaving a low weekly return rate.</p>
+                            </div>
+                            <div class="body-item">
+                                <span class="body-label color-primary"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> OPPORTUNITY</span>
+                                <p>Give users a relevant reason to keep exploring after initial intent by introducing personalized recommendations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Col 2 -->
+                    <div class="finding-card">
+                        <div class="finding-top">
+                            <span class="find-num">02</span>
+                            <h3>Filtering System</h3>
+                            <div class="finding-sub-header">From browsing to relevant discovery</div>
+                        </div>
+                        
+                        <div class="finding-body">
+                            <div class="body-item">
+                                <span class="body-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a6 6 0 0 1 6 6c0 2.22-1.21 4.16-3 5.2V17a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-3.8C7.21 12.16 6 10.22 6 8a6 6 0 0 1 6-6z"/><path d="M9 21h6"/></svg> OBSERVATION</span>
+                                <p>Users find it hard to filter recipes based on real needs. An overwhelming number of recipes leads to decision fatigue.</p>
+                            </div>
+                            <div class="body-item">
+                                <span class="body-label color-primary"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> OPPORTUNITY</span>
+                                <p>Make discovery easier and more personal. Offer smarter filters and context-aware suggestions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Col 3 -->
+                    <div class="finding-card">
+                        <div class="finding-top">
+                            <span class="find-num">03</span>
+                            <h3>Monetization Strategy</h3>
+                            <div class="finding-sub-header">From monetization to utility</div>
+                        </div>
+                        
+                        <div class="finding-body">
+                            <div class="body-item">
+                                <span class="body-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a6 6 0 0 1 6 6c0 2.22-1.21 4.16-3 5.2V17a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-3.8C7.21 12.16 6 10.22 6 8a6 6 0 0 1 6-6z"/><path d="M9 21h6"/></svg> OBSERVATION</span>
+                                <p>Users need ingredients right after choosing a recipe, forcing them to switch to grocery apps. Static ads break cooking flows.</p>
+                            </div>
+                            <div class="body-item">
+                                <span class="body-label color-primary"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> OPPORTUNITY</span>
+                                <p>Connect with users at the moment they have a real need by offering seamless, in-context ingredient delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="behance-takeaway">
+                    <div class="takeaway-icon">“</div>
+                    <div class="takeaway-text">
+                        <p>“The biggest opportunity was not to add more features, but to create meaningful experiences that help users discover better, cook easier and stay engaged — while supporting the business goals.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Overview Section -->
+        <section class="case-section" id="solutions">
+            <div class="case-container">
+                <div class="section-header">
+                    <span class="step-badge">04</span>
+                    <h2>The Solutions</h2>
+                    <p class="section-subtitle-text">Solving real user problems with meaningful, experience-driven design updates.</p>
+                </div>
+                
+                <div class="solutions-overview-grid">
+                    <div class="sol-card">
+                        <span class="sol-card-num">01</span>
+                        <h3>Increase Engagement</h3>
+                        <p class="sol-card-desc">Mood-based recommendations and personalized content feeds to keep users exploring.</p>
+                    </div>
+                    <div class="sol-card">
+                        <span class="sol-card-num">02</span>
+                        <h3>Improve Discovery</h3>
+                        <p class="sol-card-desc">Contextual search filters and smart suggestions via the companion assistant.</p>
+                    </div>
+                    <div class="sol-card">
+                        <span class="sol-card-num">03</span>
+                        <h3>Natural Revenue</h3>
+                        <p class="sol-card-desc">Seamless grocery delivery integration at the point of action for missing ingredients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution 1 Section -->
+        <section class="case-section bg-light border-top">
+            <div class="case-container">
+                <div class="grid-2col align-center">
+                    <div class="pane-text">
+                        <span class="solution-tag">SOLUTION 01</span>
+                        <h2>Increase Engagement</h2>
+                        <h4 class="solution-sub">Mood-based recommendations / personalized content</h4>
+                        
+                        <div class="solution-desc-block">
+                            <p>To reduce bounce rates and increase active browsing time, I introduced emotional/mood-based filters on the app dashboard. Instead of having to think of recipes, users can simply select how they feel.</p>
+                            
+                            <ul class="solution-list">
+                                <li><strong>Emotional Triggers:</strong> Quick mood selectors ("Happy", "Tired", "Cozy") that tailor recommendations immediately.</li>
+                                <li><strong>Dynamic Feeds:</strong> Scrollable feed collections (e.g. Cozy Comfort Foods) displayed on recipe landing pages.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pane-img double-mockup">
+                        <img src="assets/mockups/shared_image_1.png" alt="Engagement Mood Popup" class="behance-mockup-img">
+                        <img src="assets/mockups/shared_image_2.png" alt="Engagement Mood Feed" class="behance-mockup-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution 2 Section -->
+        <section class="case-section border-top">
+            <div class="case-container">
+                <div class="grid-2col align-center">
+                    <div class="pane-img">
+                        <img src="assets/mockups/shared_image_3.png" alt="Smart Chef Companion" class="behance-mockup-img">
+                    </div>
+                    <div class="pane-text">
+                        <span class="solution-tag">SOLUTION 02</span>
+                        <h2>Improve Discovery</h2>
+                        <h4 class="solution-sub">Smarter filters + Contextual suggestions</h4>
+                        
+                        <div class="solution-desc-block">
+                            <p>I designed the "Smart Chef" companion system to help users find recipes based on what they already have at home, avoiding decision fatigue and reducing food waste.</p>
+                            
+                            <ul class="solution-list">
+                                <li><strong>Fridge Assistant:</strong> Input the ingredients you currently have in your fridge and get matching recipes instantly.</li>
+                                <li><strong>Voice Assistant:</strong> Hands-free cooking assistant ("Tap to Read") to read out recipe steps while in the kitchen.</li>
+                                <li><strong>Smart Servings:</strong> Dynamically recalculate ingredient quantities and weights depending on serving count.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution 3 Section -->
+        <section class="case-section bg-light border-top">
+            <div class="case-container">
+                <div class="grid-2col align-center">
+                    <div class="pane-text">
+                        <span class="solution-tag">SOLUTION 03</span>
+                        <h2>Create Natural Revenue</h2>
+                        <h4 class="solution-sub">Grocery delivery partnership (Zepto Integration)</h4>
+                        
+                        <div class="solution-desc-block">
+                            <p>Instead of placing intrusive banner ads, I introduced a context-aware utility feature: single-click ingredient purchase via Zepto 10-minute grocery delivery.</p>
+                            
+                            <ul class="solution-list">
+                                <li><strong>Checklist System:</strong> Users tick off ingredients they already have, leaving only the missing items.</li>
+                                <li><strong>One-Tap Zepto Delivery:</strong> Missing ingredients are automatically compiled and can be ordered to arrive in 10 minutes.</li>
+                                <li><strong>Seamless Integration:</strong> Enhances the user experience while generating a stable affiliate revenue stream.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pane-img">
+                        <img src="assets/mockups/shared_image_4.png" alt="Grocery Integration Checkout" class="behance-mockup-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User + Business Value Section -->
+        <section class="case-section" id="impact">
+            <div class="case-container">
+                <div class="section-header center-header">
+                    <span class="step-badge">05</span>
+                    <h2>USER + BUSINESS VALUE</h2>
+                </div>
+                
+                <div class="value-two-col-grid">
+                    <!-- Column 1: For the User -->
+                    <div class="value-card">
+                        <div class="value-card-header">
+                            <span class="value-badge-tag">FOR THE USER</span>
+                        </div>
+                        <ul class="value-list">
+                            <li>A more useful cooking journey</li>
+                            <li>More relevant recipes to discover</li>
+                            <li>More reasons to stay engaged</li>
+                            <li>Less effort between choosing a recipe and actually cooking it</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: For the Business -->
+                    <div class="value-card">
+                        <div class="value-card-header">
+                            <span class="value-badge-tag color-business">FOR THE BUSINESS</span>
+                        </div>
+                        <ul class="value-list">
+                            <li>More valuable user interactions</li>
+                            <li>Higher opportunities for repeat engagement</li>
+                            <li>More recipe discovery and content consumption</li>
+                            <li>A natural path to monetization through grocery partnerships</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concluding Statement Card -->
+                <div class="value-summary-card">
+                    <p>By improving the moments around cooking, the product can create more value for users without compromising the experience for the sake of monetization.</p>
+                </div>
+
+                <div class="behance-cta-card">
+                    <h3>Interested in premium UX/UI collaborations?</h3>
+                    <p>Let's work together to create intuitive and high-impact digital experiences.</p>
+                    
+                    <div class="behance-cta-btns">
+                        <a href="mailto:artist@example.com" class="btn btn-dark">Get In Touch</a>
+                        <a href="https://linkedin.com" target="_blank" class="btn btn-outline">LinkedIn</a>
+                        <a href="https://behance.net" target="_blank" class="btn btn-outline">Behance</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="behance-footer">
+            <p>Designed by Studio.UX Portfolio • 2026</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
