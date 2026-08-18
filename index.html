@@ -8,7 +8,7 @@
     <!-- Google Fonts (Strictly 2 Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Main Style Sheet -->
     <link rel="stylesheet" href="styles.css?v=9">
 </head>
@@ -17,61 +17,65 @@
     <!-- Main Behance Page Wrapper -->
     <div class="behance-project">
 
+        <!-- Header / Navigation Bar -->
+        <header class="main-header">
+            <div class="header-logo">
+                <svg class="logo-icon-svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 13.8a4.5 4.5 0 1 1 2.6-8.3 5 5 0 0 1 6.8 0 4.5 4.5 0 1 1 2.6 8.3"/>
+                    <path d="M6 18h12"/>
+                    <path d="M6 14h12v4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-4Z"/>
+                </svg>
+                <span class="logo-text-smart">Smart</span><span class="logo-text-chef">Chef</span>
+            </div>
+            <div class="header-badge">UX/UI CASE STUDY</div>
+        </header>
+
         <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-content">
-                <span class="hero-tag">UX/UI CASE STUDY</span>
-                <h1 class="hero-title">Redesigning a recipe app</h1>
-                <p class="hero-subtitle">Creating new revenue opportunities without compromising the cooking experience.</p>
-                
-                <div class="project-meta-grid">
-                    <div class="meta-item">
-                        <span class="meta-label">Role</span>
-                        <span class="meta-val">Lead UI/UX Designer</span>
+        <section class="hero-section" style="padding-bottom: 50px;">
+            <div class="hero-container-grid" style="margin-bottom: 0;">
+                <div class="hero-content">
+                    <span class="hero-tag">UX/UI CASE STUDY</span>
+                    <h1 class="hero-title">Redesigning <br>a <span class="highlight-orange">recipe app</span></h1>
+                    
+                    <div class="hero-divider">
+                        <svg class="divider-hat" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 13.8a4.5 4.5 0 1 1 2.6-8.3 5 5 0 0 1 6.8 0 4.5 4.5 0 1 1 2.6 8.3"/>
+                            <path d="M6 18h12"/>
+                            <path d="M6 14h12v4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-4Z"/>
+                        </svg>
                     </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Timeline</span>
-                        <span class="meta-val">1 Week</span>
+                    
+                    <p class="hero-subtitle">Enhancing user experience and business values without compromisin the exisiting experience</p>
+                    
+                    <div class="project-meta-grid" style="margin-bottom: 0;">
+                        <div class="meta-item">
+                            <div class="meta-icon-wrapper role-bg">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </div>
+                            <div class="meta-text-col">
+                                <span class="meta-label">ROLE</span>
+                                <span class="meta-val">Lead UI/UX Designer</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon-wrapper timeline-bg">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            </div>
+                            <div class="meta-text-col">
+                                <span class="meta-label">TIMELINE</span>
+                                <span class="meta-val">1 Week</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="hero-mockup-wrapper">
-                <img src="assets/mockups/shared_image.png" alt="Recipe App Homescreen" class="hero-mockup">
-            </div>
+                <div class="hero-mockup-wrapper">
+                    <img src="assets/mockups/hero_clean_mockup.png" alt="Recipe App Homescreen Design Mockup" class="hero-mockup">
+                </div>
         </section>
 
         <!-- Project Overview Section -->
         <section class="case-section bg-light" id="overview">
             <div class="case-container">
-                <div class="section-header">
-                    <span class="step-badge">01</span>
-                    <h2>Project Overview</h2>
-                </div>
-                
-                <div class="grid-2col">
-                    <div class="overview-left">
-                        <div class="block">
-                            <h3>The Client</h3>
-                            <p>An established recipe platform already has a loyal user base and a growing library of recipes covering local and international cuisines.</p>
-                        </div>
-                        
-                        <div class="block">
-                            <h3>The Client's Request</h3>
-                            <blockquote class="behance-quote">
-                                “I want to increase revenue from my existing platform, but I don't want monetization to come at the cost of my users' experience.”
-                            </blockquote>
-                        </div>
-                    </div>
-                    
-                    <div class="overview-right">
-                        <div class="block highlight-block">
-                            <h3>The Core Challenge</h3>
-                            <p>How might I create new business opportunities within the recipe experience without frustrating the users who already love the product?</p>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Roadmap -->
                 <!-- Interactive Map Doodle Roadmap -->
                 <div class="roadmap-block" id="roadmap">
@@ -133,6 +137,34 @@
                                 <h4 class="doodle-title">THE VALUE</h4>
                                 <p class="doodle-desc">Show how the solutions benefit users and the business</p>
                             </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 100px; border-top: 1px solid var(--color-border); padding-top: 70px;">
+                    <span class="step-badge">01</span>
+                    <h2>Project Overview</h2>
+                </div>
+                
+                <div class="grid-2col">
+                    <div class="overview-left">
+                        <div class="block">
+                            <h3>The Client</h3>
+                            <p>An established recipe platform already has a loyal user base and a growing library of recipes covering local and international cuisines.</p>
+                        </div>
+                        
+                        <div class="block">
+                            <h3>The Client's Request</h3>
+                            <blockquote class="behance-quote">
+                                “I want to increase revenue from my existing platform, but I don't want monetization to come at the cost of my users' experience.”
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="overview-right">
+                        <div class="block highlight-block">
+                            <h3>The Core Challenge</h3>
+                            <p>How might I create new business opportunities within the recipe experience without frustrating the users who already love the product?</p>
                         </div>
                     </div>
                 </div>
@@ -307,11 +339,11 @@
                         <h4 class="solution-sub">Mood-based recommendations / personalized content</h4>
                         
                         <div class="solution-desc-block">
-                            <p>To reduce bounce rates and increase active browsing time, I introduced emotional/mood-based filters on the app dashboard. Instead of having to think of recipes, users can simply select how they feel.</p>
+                            <p>To increase browsing time, i introduced emotional mood based filters on the app. Instead of having to think of recipes , users can simply select how they feel</p>
                             
                             <ul class="solution-list">
-                                <li><strong>Emotional Triggers:</strong> Quick mood selectors ("Happy", "Tired", "Cozy") that tailor recommendations immediately.</li>
-                                <li><strong>Dynamic Feeds:</strong> Scrollable feed collections (e.g. Cozy Comfort Foods) displayed on recipe landing pages.</li>
+                                <li>Users can just say how they feel and let the app give them recipes based on their mood</li>
+                                <li>Notifications to make them feel they have a reason to come back</li>
                             </ul>
                         </div>
                     </div>
@@ -416,16 +448,7 @@
                     <p>By improving the moments around cooking, the product can create more value for users without compromising the experience for the sake of monetization.</p>
                 </div>
 
-                <div class="behance-cta-card">
-                    <h3>Interested in premium UX/UI collaborations?</h3>
-                    <p>Let's work together to create intuitive and high-impact digital experiences.</p>
-                    
-                    <div class="behance-cta-btns">
-                        <a href="mailto:artist@example.com" class="btn btn-dark">Get In Touch</a>
-                        <a href="https://linkedin.com" target="_blank" class="btn btn-outline">LinkedIn</a>
-                        <a href="https://behance.net" target="_blank" class="btn btn-outline">Behance</a>
-                    </div>
-                </div>
+
             </div>
         </section>
 
