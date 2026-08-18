@@ -492,13 +492,12 @@ body {
 .phone-device-frame {
     position: absolute;
     width: 180px; /* smaller width for double phone stacked presentation */
-    background-color: #0f0f10;
-    border: 7px solid #1c1c1e; /* sleek, thin bezel */
-    border-radius: 28px;
+    background-color: transparent;
+    border: none; /* remove outer black border line */
+    border-radius: 24px;
     box-shadow: 
-        0 20px 40px -10px rgba(0, 0, 0, 0.18), 
-        0 0 0 1px rgba(0,0,0,0.08), 
-        inset 0 0 2px 2px rgba(255,255,255,0.1);
+        0 20px 40px -10px rgba(0, 0, 0, 0.15), 
+        0 0 0 1px rgba(0,0,0,0.05);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -518,7 +517,7 @@ body {
 .phone-device-frame:hover {
     transform: translateY(-8px) scale(1) rotate(0deg);
     z-index: 8;
-    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.22);
 }
 
 /* Premium Diagonal Screen Glare Highlight */
@@ -534,25 +533,12 @@ body {
     z-index: 8;
 }
 
-/* Dynamic Island / Speaker notch */
-.phone-speaker-notch {
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 45px;
-    height: 10px;
-    background-color: #1c1c1e;
-    border-radius: 5px;
-    z-index: 10;
-}
-
 .hero-mockup {
     width: 100%;
     height: auto;
     object-fit: cover;
     border: none;
-    border-radius: 20px; /* curved to fit inside the frame */
+    border-radius: 24px; /* curved to fit inside the frame */
     display: block;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
