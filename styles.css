@@ -433,71 +433,144 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0;
+    padding: 20px 0;
 }
 
-.mockup-bg-circle {
-    display: none; /* circle is already in the mockup composition */
+/* Dotted grid pattern in background */
+.hero-mockup-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+    z-index: 0;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.hero-mockup-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at 60% 40%, rgba(214, 121, 40, 0.15) 0%, rgba(255, 255, 255, 0) 65%),
+                radial-gradient(circle at 40% 60%, rgba(74, 99, 50, 0.12) 0%, rgba(255, 255, 255, 0) 65%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    filter: blur(15px);
+}
+
+/* Premium iPhone Device Mockup Frame */
+.phone-device-frame {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    background-color: #0f0f10;
+    border: 11px solid #1a1a1c;
+    border-radius: 40px;
+    box-shadow: 
+        0 30px 60px -15px rgba(0, 0, 0, 0.22), 
+        0 0 0 1px rgba(0,0,0,0.15), 
+        inset 0 0 2px 2px rgba(255,255,255,0.12);
+    z-index: 5;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Premium Diagonal Screen Glare Highlight */
+.phone-device-frame::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.03) 40%, rgba(0,0,0,0) 40.1%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+    z-index: 8;
+}
+
+/* Dynamic Island / Speaker notch */
+.phone-speaker-notch {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 18px;
+    background-color: #1a1a1c;
+    border-radius: 10px;
+    z-index: 10;
 }
 
 .hero-mockup {
     width: 100%;
-    max-width: 360px;
     height: auto;
-    object-fit: contain;
-    position: relative;
-    z-index: 5;
+    object-fit: cover;
     border: none;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.05), 0 10px 20px rgba(0,0,0,0.02);
-    border-radius: 16px;
+    border-radius: 30px; /* curved to fit inside the frame */
+    display: block;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
 }
 
-/* Decorative Background Ingredients */
-.deco-tomato {
+/* Left Floating Badge */
+.floating-badge-left {
     position: absolute;
-    width: 110px;
-    height: auto;
-    left: -20px;
-    bottom: 0px;
-    z-index: 6;
-}
-
-.deco-leaf-left {
-    position: absolute;
-    width: 130px;
-    height: auto;
+    top: 32%;
     left: -40px;
-    top: 30%;
-    z-index: 4;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(74, 99, 50, 0.15);
+    border-radius: 30px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    z-index: 10;
+    transition: transform 0.3s ease;
 }
 
-.deco-leaf-right {
-    position: absolute;
-    width: 120px;
-    height: auto;
-    right: -20px;
-    top: 15%;
-    z-index: 4;
+.floating-badge-left:hover {
+    transform: translateY(-4px);
 }
 
-.deco-leaf-top {
-    position: absolute;
-    width: 65px;
-    height: auto;
-    right: 40px;
-    top: 0%;
-    z-index: 4;
+.badge-icon-wrapper {
+    width: 24px;
+    height: 24px;
+    background-color: #eaf4ed;
+    color: var(--accent-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
-.deco-noodles {
-    position: absolute;
-    width: 290px;
-    height: auto;
-    right: -80px;
-    bottom: -10px;
-    z-index: 3;
+.badge-text-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-text-col span {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--bg-dark);
+    line-height: 1.2;
+}
+
+.badge-text-col small {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    color: var(--color-muted);
+    line-height: 1.2;
 }
 
 /* Peppercorn Groups */
@@ -539,18 +612,25 @@ body {
 /* Floating Card */
 .floating-assistant-card {
     position: absolute;
-    bottom: 30%;
-    right: -60px;
-    background-color: #ffffff;
-    border: 1px solid var(--color-border);
+    bottom: 25%;
+    right: -25px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 16px;
     padding: 14px 18px;
     display: flex;
     align-items: center;
     gap: 12px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06), 0 4px 8px rgba(0,0,0,0.02);
     z-index: 10;
     width: 210px;
+    transition: transform 0.3s ease;
+}
+
+.floating-assistant-card:hover {
+    transform: translateY(-4px) scale(1.02);
 }
 
 .floating-hat-icon-wrapper {
