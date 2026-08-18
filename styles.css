@@ -477,22 +477,48 @@ body {
     pointer-events: none;
 }
 
+/* Double phone container */
+.double-phone-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 380px;
+    z-index: 5;
+}
+
 /* Premium iPhone Device Mockup Frame */
 .phone-device-frame {
-    position: relative;
-    width: 100%;
-    max-width: 260px; /* fits perfectly inside the presentation card */
+    position: absolute;
+    width: 180px; /* smaller width for double phone stacked presentation */
     background-color: #0f0f10;
-    border: 9px solid #1c1c1e; /* sleek, thin bezel */
-    border-radius: 38px;
+    border: 7px solid #1c1c1e; /* sleek, thin bezel */
+    border-radius: 28px;
     box-shadow: 
-        0 20px 40px -10px rgba(0, 0, 0, 0.22), 
-        0 0 0 1px rgba(0,0,0,0.1), 
+        0 20px 40px -10px rgba(0, 0, 0, 0.18), 
+        0 0 0 1px rgba(0,0,0,0.08), 
         inset 0 0 2px 2px rgba(255,255,255,0.1);
-    z-index: 5;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.phone-device-frame.phone-1 {
+    transform: translateX(-55px) rotate(-4deg) scale(0.92);
+    z-index: 4;
+}
+
+.phone-device-frame.phone-2 {
+    transform: translateX(55px) rotate(4deg) scale(0.96);
+    z-index: 6;
+}
+
+.phone-device-frame:hover {
+    transform: translateY(-8px) scale(1) rotate(0deg);
+    z-index: 8;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.25);
 }
 
 /* Premium Diagonal Screen Glare Highlight */
@@ -511,13 +537,13 @@ body {
 /* Dynamic Island / Speaker notch */
 .phone-speaker-notch {
     position: absolute;
-    top: 7px;
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
-    width: 70px;
-    height: 15px;
+    width: 45px;
+    height: 10px;
     background-color: #1c1c1e;
-    border-radius: 8px;
+    border-radius: 5px;
     z-index: 10;
 }
 
@@ -526,7 +552,7 @@ body {
     height: auto;
     object-fit: cover;
     border: none;
-    border-radius: 28px; /* curved to fit inside the frame */
+    border-radius: 20px; /* curved to fit inside the frame */
     display: block;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
