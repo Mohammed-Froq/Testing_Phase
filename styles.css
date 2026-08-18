@@ -442,7 +442,7 @@ body {
 
 .hero-mockup {
     width: 100%;
-    max-width: 580px;
+    max-width: 360px;
     height: auto;
     object-fit: contain;
     position: relative;
