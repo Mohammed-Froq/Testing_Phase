@@ -477,57 +477,14 @@ body {
     pointer-events: none;
 }
 
-/* Premium iPhone Device Mockup Frame */
-.phone-device-frame {
+.hero-mockup {
     position: relative;
     width: 100%;
-    max-width: 260px; /* slightly smaller to fit elegantly inside panel */
-    background-color: #0f0f10;
-    border: 10px solid #1a1a1c;
-    border-radius: 36px;
-    box-shadow: 
-        0 25px 50px -15px rgba(0, 0, 0, 0.2), 
-        0 0 0 1px rgba(0,0,0,0.15), 
-        inset 0 0 2px 2px rgba(255,255,255,0.12);
-    z-index: 5;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Premium Diagonal Screen Glare Highlight */
-.phone-device-frame::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 40%, rgba(0,0,0,0) 40.1%, rgba(0,0,0,0) 100%);
-    pointer-events: none;
-    z-index: 8;
-}
-
-/* Dynamic Island / Speaker notch */
-.phone-speaker-notch {
-    position: absolute;
-    top: 7px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 16px;
-    background-color: #1a1a1c;
-    border-radius: 8px;
-    z-index: 10;
-}
-
-.hero-mockup {
-    width: 100%;
+    max-width: 290px;
     height: auto;
-    object-fit: cover;
-    border: none;
-    border-radius: 26px;
+    object-fit: contain;
     display: block;
+    z-index: 5;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
 }
